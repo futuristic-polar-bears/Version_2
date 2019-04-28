@@ -3,18 +3,26 @@
   <head>
     <title>H.I.V.E Computer_Lab</title>
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   </head>
   <body>
+    <div class="bg-dark py-1">
+      <div class="container ">
+        <button type="button" class="btn btn-outline-light btn-sm">Exit</button>
+      </div>
+    </div>
     <a-scene raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position>
+
 
       <a-assets>
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <img id="thumbCity" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/city.png">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+        <img id="HIVELogo" src="FinalVersionLogoH.I.V.E.png" />
       </a-assets>
 
-      <a-assets>
-        <img id="thumbCity" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/city.png">
-      </a-assets>
+      <a-image src="#HIVELogo" position="0 2 -5"> </a-image>
 
       <!-- text -->
       <!-- <a-text value="Hello, Alex!" position="-0.8 1.7 -2.9" color="black" width="7"></a-text>
@@ -25,8 +33,8 @@
 
       <!-- door  -->
       <a-link title="GO Back - 180 for computer parts" href="landing.html" position="0 2 -15 " image="#thumbCity"></a-link>
-    <a-link title="Computer_parts" href="computer_components.html" position="0 1 15" image="#thumbCity"></a-link>
- 
+      <a-link title="Computer_parts" href="computer_components.html" position="0 1 15" image="#thumbCity"></a-link>
+
       <!-- Component -->
       <!-- RAM -->
         <a-text value="RAM (Random-access memory)" position="-5.9 3.5 -0.7" rotation="0 90 0" color="black" width="7"></a-text>
@@ -60,6 +68,7 @@
         <a-box position="-5.98 0.15 -4.6" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
         <a-box position="-5.98 0.15 -4.8" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
         <a-box position="-5.98 0.15 -5.0" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+
 
 
 

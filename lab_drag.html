@@ -13,24 +13,19 @@
   <head>
     <title>Computer Fundamental</title>
     <script src="https://jesstelford.github.io/aframe-click-drag-component/build.js"></script>
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-    <script src="http://gasolin.idv.tw/aframe-href-component/build.js"></script>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+
   </head>
   <body>
 
+    <button type="YEYE" name="button"></button>
     <a-scene>
       <a-assets>
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
       </a-assets>
-
-
       <!-- base -->
-      <a-plane static-body position="0 0.1 -5 " rotation="-90 0 0" width="200" height="200" color="#000000"></a-plane>
-
       <!-- elements -->
-
-
       <a-entity dynamic-body click-drag >
         <a-box position="0 5 0" scale="1 10 5" color=red rotation="0 0 0">
           <a-animation attribute="material.opacity" begin="dragstart" from="1.0" to="0.2" dur="200"></a-animation>
@@ -41,14 +36,10 @@
           <a-animation attribute="material.opacity" begin="dragend" from="0.2" to="1.0" dur="200"></a-animation>
         </a-box>
       </a-entity>
-      <a-box position="0.01 1.7 -3" rotation="0 0 0" width="2" height="0.5" depth="0.1" color="yellow"></a-box>
-      <a-entity link="href: index.html; title:My Home;"></a-entity>
-      <a-text value="Hello, World!"></a-text>
+
       <!-- camera -->
-      <a-entity>
-        <a-camera>
-        </a-camera>
-      </a-entity>
+      <a-camera></a-camera>
+
       <!-- sky and ground -->
       <a-cylinder id="ground" src="#groundTexture" radius="30" height="0.1"></a-cylinder>
       <a-sky id="background" src="#skyTexture" theta-length="90" radius="30"></a-sky>
