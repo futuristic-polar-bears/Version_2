@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <title>H.I.V.E Computer_Lab</title>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position>
+
+      <a-assets>
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+      </a-assets>
+
+      <a-assets>
+        <img id="thumbCity" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/city.png">
+      </a-assets>
+
+      <!-- text -->
+      <!-- <a-text value="Hello, Alex!" position="-0.8 1.7 -2.9" color="black" width="7"></a-text>
+      <a-box position="0.01 1.7 -3" rotation="0 0 0" width="2" height="0.5" depth="0.1" color=""></a-box> -->
+
+      <!-- banner -->
+      <a-text text="align: center" value="Computer_Lab" position="0 12 -25" color="yellow" scale="15 10"></a-text>
+
+      <!-- door  -->
+      <a-link title="GO Back - 180 for computer parts" href="landing.html" position="0 2 -15 " image="#thumbCity"></a-link>
+    <a-link title="Computer_parts" href="computer_components.html" position="0 1 15" image="#thumbCity"></a-link>
+ 
+      <!-- Component -->
+      <!-- RAM -->
+        <a-text value="RAM (Random-access memory)" position="-5.9 3.5 -0.7" rotation="0 90 0" color="black" width="7"></a-text>
+        <a-text value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500." position="-5.9 3.05 -0.75" rotation="0 90 0" color="black" width="3"></a-text>
+        <a-box position="-6 3.2 -3" rotation="0 90 0" scale="5 1 0.1" color="yellow"></a-box>
+        <a-box position="-6 0.2 -3" rotation="0 90 0" scale="5 2 0.1" color="#009900"></a-box>
+        <a-box position="-5.95 0.7 -1.3" rotation="0 90 0" scale="0.5 0.67 0.1" color="#000000"></a-box>
+        <a-box position="-5.95 0.7 -2" rotation="0 90 0" scale="0.5 0.67 0.1" color="#000000"></a-box>
+        <a-box position="-5.95 0.7 -2.7" rotation="0 90 0" scale="0.5 0.67 0.1" color="#000000"></a-box>
+        <a-box position="-5.95 0.7 -3.4" rotation="0 90 0" scale="0.5 0.67 0.1" color="#000000"></a-box>
+        <a-box position="-5.95 0.7 -4.1" rotation="0 90 0" scale="0.5 0.67 0.1" color="#000000"></a-box>
+        <a-box position="-5.95 0.7 -4.8" rotation="0 90 0" scale="0.5 0.67 0.1" color="#000000"></a-box>
+        <a-box position="-5.98 0.15 -1" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -1.2" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -1.4" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -1.6" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -1.8" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -2.0" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -2.2" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -2.4" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -2.6" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -2.8" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -3.0" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -3.2" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -3.4" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -3.6" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -3.8" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -4.0" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -4.2" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -4.4" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -4.6" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -4.8" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+        <a-box position="-5.98 0.15 -5.0" rotation="0 90 0" scale="0.1 0.2 0.1" color="gold"></a-box>
+
+
+
+      <!-- base -->
+      <!-- <a-plane position="0 0.1 -5" rotation="-90 0 0" scale="15 12" color="#004d00"></a-plane> -->
+
+
+      <!-- sky and ground -->
+      <a-cylinder id="ground" src="#groundTexture" radius="30" height="0.1"></a-cylinder>
+      <a-sky id="background" src="#skyTexture" theta-length="90" radius="30"></a-sky>
+
+    </a-scene>
+  </body>
+</html>

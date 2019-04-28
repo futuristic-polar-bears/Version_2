@@ -1,0 +1,53 @@
+<!--
+  Reference
+   a-frame(WebVR)   -> https://aframe.io/
+                    -> https://github.com/etiennepinchon
+                    -> https://github.com/jesstelford
+                    -> https://github.com/supermedium/superframe
+
+   Free Css source  -> Bootstrap -> https://getbootstrap.com/
+                    -> Bootsnipp ->https://bootsnipp.com/
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>H.I.V.E</title>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position>
+
+      <a-assets>
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+      </a-assets>
+      <a-assets>
+        <img id="thumbCity" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/city.png">
+      </a-assets>
+
+      <!-- text -->
+      <a-text rotation="270 0 0" position="0 0.2 -2" text="align: center" value="Hello, Alex!"  color="black" width="15"></a-text>
+      <a-box rotation="90 0 0" position="0 0.1 -2"  scale="5 1.7 0.1" color=""></a-box>
+
+      <!-- banner -->
+      <a-text text="align: center" value="H.I.V.E" position="0 12 -25" color="yellow" scale="15 10"></a-text>
+
+      <!-- hints for door -->
+      <a-text rotation="0 0 0" position="0 1.5 -4.9" text="align: center" value="Click here to begin"  color="red" width="3"></a-text>
+      <a-box rotation="0 0 0" position="0 1.5 -5"  scale="1.5 0.3 0.1" color=""></a-box>
+      <!-- door  -->
+      <a-link title="Computer Fundamental Lab" href="lab.html" position="0 1.5 -5 " image="#thumbCity" scale="0.8 0.8"></a-link>
+      <a-link title="Logout" href="index.html" position="3 1.5 -5" scale="0.8 0.8"></a-link>
+
+      <!-- base -->
+      <!-- <a-plane position="0 0.1 0 " rotation="-90 0 0" scale="5 5" color="green"></a-plane>
+      <a-sky color="blue"></a-sky> -->
+
+      <!-- camera -->
+      <!-- sky and ground -->
+      <a-cylinder id="ground" src="#groundTexture" radius="30" height="0.1"></a-cylinder>
+      <a-sky id="background" src="#skyTexture" theta-length="90" radius="30"></a-sky>
+
+    </a-scene>
+  </body>
+</html>

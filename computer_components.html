@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js">
+      </script>
+       <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position>
+        <a-assets> 
+            <a-asset-item id="ram" src="computer_components/scene.gltf"></a-asset-item></a-assets>
+        <a-entity gltf-model="#ram" position="0 2 -10" scale="1 1 1"></a-entity>
+          <!-- Out of the box environment! -->
+  <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+     <a-link title="GO Back" href="lab.html" position="0 2 -15 " image="#thumbCity"></a-link>
+        
+    </a-scene>
+  </body>f
+</html>
